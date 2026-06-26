@@ -8,14 +8,16 @@ body {
 
 header,
 main,
+#content,
 nav {
     text-align: center;
 }
 
-nav{
+nav {
     border-top: 1px solid gray;
     padding-top: 1em;
 }
+
 nav a {
     padding: 15px 15px 4px 15px;
     font-size: 1.8em;
@@ -26,12 +28,12 @@ nav a {
 nav a:hover {
     border-bottom: 2px solid orange;
     font-size: 2em;
-    transition: 0.9s;    
+    transition: 0.9s;
 }
 
 main {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 footer {
@@ -41,8 +43,42 @@ footer {
     margin-top: auto;
     border-top: 1px solid gray;
     padding: 1em;
-    color: #A0A0A0;}
+    color: #A0A0A0;
+}
 
 footer img {
     width: 150px;
+}
+
+table {
+    margin: 25px auto;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+th strong {
+    color: orange;
+}
+
+#table-header {
+    background-color: #351a00;
+}
+
+.table-row {
+    background-color: #753900;
+}
+
+ul {
+    width: 500px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.hobby {
+    color: yellow;
 }
