@@ -34,7 +34,35 @@ nav a:hover {
 main {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 1em;
 }
+
+main figure,
+main>div {
+    flex: 1;
+}
+
+main figure {
+    margin: 0;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
 
 footer {
     font-size: 0.8em;
@@ -63,6 +91,7 @@ td {
 
 th strong {
     color: orange;
+    padding: 1em;
 }
 
 #table-header {
@@ -74,11 +103,30 @@ th strong {
 }
 
 ul {
-    width: 500px;
+    max-width: 500px;
     margin: 25px auto;
     text-align: left;
 }
 
 .hobby {
     color: yellow;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main figure,
+    main>div {
+        width: 100%;
+    }
+
+    ul {
+        max-width: 500px;
+        margin: 25px auto;
+        text-align: left;
+        padding-inline-start: 25px;
+    }
 }
