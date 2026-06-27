@@ -1,9 +1,15 @@
-body {
+    body {
     background-color: black;
     color: gray;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: "Open Sans", sans-serif; 
+    font-optical-sizing: auto; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-variation-settings: 
+    "wdth" 100; 
 }
 
 header,
@@ -22,13 +28,13 @@ nav a {
     padding: 15px 15px 4px 15px;
     font-size: 1.8em;
     text-decoration: none;
-    color: white;
+    color: #F2F2F2;
 }
 
 nav a:hover {
     border-bottom: 2px solid orange;
     font-size: 2em;
-    transition: 0.9s;
+    transition: 0.3s;
 }
 
 main {
@@ -62,6 +68,21 @@ main img {
     padding: 1em;
 }
 
+#content.contact-form {
+    background-image: url('../img/deep-44lgPdzdwO0-unsplash.png');
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    background-position: left, top left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+}
+#content .contact-form-container {
+    background-color: rgba(242, 242, 242, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+
+}
 
 
 footer {
