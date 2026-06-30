@@ -199,7 +199,8 @@ ul.features {
 }
 
 .js-features-grid .features,
-.wrapper .features {
+.wrapper .features,
+.sources .features {
     margin: 0;
 }
 
@@ -218,12 +219,13 @@ ul.features {
     grid-row: row1-start;
 }
 
-.js-article-Resources a {
+
+.js-article-Resources a, .sources a,  .js-article-sources a {
     color: #625086;
     text-decoration: none;
     transition: color 0.2s;
 }
-.js-article-Resources a:hover {
+.js-article-Resources a:hover, .sources a:hover, .js-article-sources a:hover {
     color: #60a5fa;
 }
 
@@ -232,31 +234,25 @@ ul.features {
     grid-column: col1-start / col2-end;
     grid-row: row2-start;
 }
-
+.js-article-sources {
+    grid-column: col1-start / col2-end;
+    grid-row: row3-start;
+}
 /* Stack on small screens */
 
 @media (max-width: 850px) {
-
     .js-features-grid,
     .card-grid,
     .wrapper {
         grid-template-columns: 1fr;
     }
 
-    .js-article-history {
-        grid-column: col1-start / col3-start;
-        grid-row: row1-start;
-    }
-
-    .js-article-Features {
-        grid-column: col1-start / col3-end;
-        grid-row: row2-start;
-    }
-
-    .js-article-Resources {
-        grid-column: col3-start;
-        grid-row: row3-start;
-        ;
+    .js-article-history,
+    .js-article-Features,
+    .js-article-Resources,
+    .js-article-sources {
+        grid-column: 1;
+        grid-row: auto;
     }
 
     article~article {
